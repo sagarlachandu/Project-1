@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Form</title>
+<style>
+body {
+background-color: #00bfff;
+}
+</style>
+</head>
+<body>
+    <center>
+	<div class="loginForm">	
+        <h2>Welcome to Employee Reimbursement System</h2>
+		<form action="http://localhost:8080/EmployeeReimbursementApp/LoginServlet" method="GET">
+			<table class="table table-hover">
+				<tr>
+					<th>Email/Contact.No</th>
+					<td><input type="text" name="uname" placeholder="Enter your email or contact number" required></td>
+				</tr>
+				<tr>
+					<th>Password</th>
+					<td><input type="password" name="pwd" placeholder="Enter your password" required></td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="Login"></td>
+					<td><input type="submit" value="Forgot Password" onclick="goToForgotPassword()"></td>
+				</tr>
+			</table>
+		</form>
+        <p id="NewAccount"> 
+        <a href="http://localhost:8080/EmployeeReimbursementApp/signup.html">Create an Account</a></p>
+	</div>
+</center>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SignUp Form</title>
+<style>
+body {
+  background-color: #FFA500;
+}
+</style>
+</script> 
+</head>
+<body>
+	<center>
+		<div class="Signup">
+			<h2>Employee Reimbursement System Registration</h2>
+			<form
+				action="http://localhost:8080/EmployeeReimbursementApp/SignupServlet"
+				method="GET">
+				<table class="table table-hover">
+					<tr>
+						<th>First name</th>
+						<td><Input id="fname" type="text" name="firstName"
+							placeholder="Enter your first name" required></td>
+
+					</tr>
+					<tr>
+						<th>Last name</th>
+						<td><input id="lname" type="text" name="lastName"
+							placeholder="Enter your last name" required></td>
+					</tr>
+					<tr>
+						<th>Email</th>
+						<td><input id="email" type="email" name="email"
+							placeholder="Enter your email" required></td>
+					</tr>
+					<tr>
+						<th>Contact No</th>
+						<td><input id="phoneNo" type="tel" name="contactNo"
+							placeholder="Enter your contact number" required></td>
+					</tr>
+					<tr>
+						<th>Date of birth</th>
+						<td><input id="dob" type="date" name="dateOfBirth" required></td>
+
+					</tr>
+					<tr>
+						<th>Age</th>
+						<td><input id="age" type="number" name="age"
+							placeholder="Enter your age" required></td>
+					</tr>
+					<tr>
+						<th rowspan="2">Gender</th>
+						<td><input id="male" type="radio" name="radioGender"
+							value="Male"><label for="male">Male</label></td>
+					</tr>
+					<tr>
+						<td><input id="female" type="radio" name="radioGender"
+							value="Female"><label for="female">Female</label></td>
+					</tr>
+					<tr>
+					<th>Address</th>
+					<td><textarea id="address" rows="2" cols="50" name="address"
+							placeholder="Enter your address" required></textarea></td>
+				</tr>
+					<tr>
+						<th>Employee type</th>
+						<td><select name="etype">
+								<option value="Employee">Employee
+								<option value="Manager">Manager
+						</select></td>
+					</tr>
+					<tr>
+						<td><input id="submitButton" type="submit" value="Register"></td>
+						<td><input id="resetButton" type="reset" value="Reset"></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</center>
+</body>
+</html>

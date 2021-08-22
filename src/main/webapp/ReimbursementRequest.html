@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee Reimbursement Request Form</title>
+<style>
+body {
+ background-color: #00bfff;
+}
+</style>
+</head>
+<body>
+<center>
+	<div class="EmployeeReImbursement">
+	<h2>Employee Reimbursement Form</h2>
+		<form action="http://localhost:8080/EmployeeReimbursementApp/ReImbursementRequestServlet" method="GET">
+			<table class="table table-hover">
+				<tr>
+					<th>Reimbursement ID</th>
+					<td><Input id="Reimbursementid" type="text" name="reImbursementId"
+						placeholder="Enter your reimbursement id" required></td>
+
+				</tr>
+                <tr>
+					<th>Reimbursement type</th>
+					<td><select name="reImbursementType">
+							<option value="Travel">Travel
+							<option value="Health">Health
+                            <option value="Food">Food
+                            <option value="Education">Education
+					</select></td>
+				</tr>
+				<tr>
+					<th>Amount</th>
+					<td><input id="amt" type="number" name="reImbursementAmount"
+						placeholder="Enter your reimbursement amount" min="1000" max="50000" required></td>
+
+				</tr>
+				<tr>
+					<th>Date</th>
+					<td><input id="dateOfSubmission" type="date" name="reImbursementSubDate" required></td>
+				</tr>
+				<tr>
+					<td><input id="status" type="hidden" name="reImbursementStatus"
+						value="Pending" required></td>
+				</tr>
+				<tr>
+					<th>Description</th>
+					<td><textarea id="description" rows="5" cols="50" name="reImbursementDescription"
+							placeholder="Enter your description" required></textarea></td>
+				</tr>
+				<tr>
+					<th>Upload a File</th>
+					<td><input id="file" type="file" name="reImbursementFile"></td>
+
+				</tr>
+				<tr>
+					<td><input id="remarks" type="hidden" name="reImbursementRemarks"
+						value="null" required></td>
+				</tr>
+				<tr>
+					<td><input id="actionDate" type="hidden" name="reImbursementActionDate"
+						value="00/00/0000" required></td>
+				</tr>
+
+				<tr>
+					<td><input id="submitButton" type="submit" value="Register">
+					</button></td>
+					<td><input id="resetButton" type="reset" value="Reset"></td>
+
+				</tr>
+			</table>
+		</form>
+	</div>
+</center>
+</body>
+</html>

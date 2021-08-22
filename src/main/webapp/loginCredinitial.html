@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Credential Form</title>
+<style>
+body {
+ background-color: #00bfff;
+}
+</style>
+
+</head>
+<body>
+    <center>
+	<div class="credentialGenerationForm">	
+        <h2>Login Credentials Form</h2>
+		<form action="http://localhost:8080/EmployeeReimbursementApp/LoginCredentialsServlet" method="GET">
+			<table class="table table-hover">
+				<tr>
+					<th>User Name</th>
+					<td><input type="text" name="uname" placeholder="Enter your email or contact number" required></td>
+				</tr>
+				<tr>
+					<th>Password</th>
+					<td><input type="password" name="pwd" placeholder="Enter your password" required></td>
+				</tr>
+                <tr>
+					<th>Confirm Password</th>
+					<td><input type="password" name="confirmPassword" placeholder="Re enter your password" required></td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="Submit"></button></td>
+					<td><input type="reset" value="Reset"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</center>
+</body>
+</html>
